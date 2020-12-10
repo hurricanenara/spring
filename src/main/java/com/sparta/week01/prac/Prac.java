@@ -5,37 +5,46 @@ import java.util.List;
 
 public class Prac {
 
-    // 파라미터 X, 반환값 X
-    public static void simplePrint() {
-        System.out.println("파라미터도 없고, 반환값도 없어요!");
-    }
-
-    // 파라미터 O, 반환값 X
-    public static void simpleSum(int num1, int num2) {
-        System.out.println("num1 :" + num1 + ", num2: " + num2);
-    }
-
-    // 파라미터 X, 반환값 O
-    public static int simpleReturn() {
-        return 3;
-    }
-
-    // 파라미터 O, 반환값 O
-    public static int sum( int num1, int num2) {
-        return num1 + num2;
-    }
-
-    public static void printInfo() {
-        String title = "Software Developer";
-        String name = "Nara";
-
-        System.out.println(title);
-        System.out.println(name);
-    }
-
     public static void main(String[] args) {
-        int ret = sum(10, 7);
-        System.out.println(ret);
+        List<String> fruits = new ArrayList<>();
+        fruits.add("감");
+        fruits.add("배");
+        fruits.add("감");
+        fruits.add("딸기");
+        fruits.add("수박");
+        fruits.add("메론");
+        fruits.add("수박");
+        fruits.add("딸기");
+        fruits.add("메론");
+        fruits.add("수박");
+        fruits.add("메론");
+        fruits.add("수박");
+        fruits.add("감");
+        System.out.println(fruits);
+
+        System.out.println(fruits.get(0));
+        System.out.println(fruits.get(1));
+        System.out.println(fruits.get(2));
+        System.out.println(fruits.get(3));
+        System.out.println(fruits.get(4));
+        System.out.println(fruits.get(5));
+        System.out.println(fruits.get(6));
+        System.out.println(fruits.get(7));
+        System.out.println(fruits.get(8));
+        System.out.println(fruits.get(9));
+        System.out.println(fruits.get(10));
+        System.out.println(fruits.get(11));
+        System.out.println(fruits.get(12));
+
+        //enhanced for
+        for (String fruit : fruits) {
+            System.out.println(fruit);
+        }
+
+        for (int i=0; i < fruits.size(); i++) {
+            String fruit = fruits.get(i);
+            System.out.println(fruit);
+        }
     }
 }
 
