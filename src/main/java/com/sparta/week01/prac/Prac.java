@@ -71,8 +71,8 @@ enhanced for
             System.out.println(celebs.get(i));
         }
 */
-
         
+
     }
 }
 
