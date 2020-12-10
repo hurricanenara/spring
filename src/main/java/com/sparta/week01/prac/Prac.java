@@ -36,7 +36,8 @@ public class Prac {
         System.out.println(fruits.get(11));
         System.out.println(fruits.get(12));
 
-        //enhanced for
+        /*
+enhanced for
         for (String fruit : fruits) {
             System.out.println(fruit);
         }
@@ -45,6 +46,33 @@ public class Prac {
             String fruit = fruits.get(i);
             System.out.println(fruit);
         }
+*/
+
+        List<String> celebs = new ArrayList<>();
+        celebs.add("아이유");
+        celebs.add("린다G");
+        celebs.add("은비");
+        celebs.add("금비");
+        celebs.add("비");
+        celebs.add("차은우");
+        celebs.add("남주혁");
+        celebs.add("수지");
+        celebs.add("정우성");
+        celebs.add("제니");
+        celebs.add("정국");
+
+/*
+        for (String celeb : celebs) {
+            System.out.println(celeb);
+        }
+*/
+/*
+        for (int i = 0; i < celebs.size(); i++) {
+            System.out.println(celebs.get(i));
+        }
+*/
+
+        
     }
 }
 
