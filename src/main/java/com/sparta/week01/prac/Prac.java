@@ -6,22 +6,22 @@ import java.util.List;
 public class Prac {
 
     // 파라미터 X, 반환값 X
-    public void simplePrint() {
+    public static void simplePrint() {
         System.out.println("파라미터도 없고, 반환값도 없어요!");
     }
 
     // 파라미터 O, 반환값 X
-    public void simpleSum(int num1, int num2) {
+    public static void simpleSum(int num1, int num2) {
         System.out.println("num1 :" + num1 + ", num2: " + num2);
     }
 
     // 파라미터 X, 반환값 O
-    public int simpleReturn() {
+    public static int simpleReturn() {
         return 3;
     }
 
     // 파라미터 O, 반환값 O
-    public int sum(num1, num2) {
+    public static int sum( int num1, int num2) {
         return num1 + num2;
     }
 
@@ -34,7 +34,8 @@ public class Prac {
     }
 
     public static void main(String[] args) {
-        printInfo();
+        int ret = sum(10, 7);
+        System.out.println(ret);
     }
 }
 
