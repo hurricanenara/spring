@@ -4,37 +4,37 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Prac {
-    public static void main(String[] args) {
-/*
-        System.out.println("Hello!");
-        String myName = "Nara";
-        float fNum = 2.4f;
-        Long largeNum = 1000000000000L;
-        System.out.println(myName);
-*/
-/*
-        int myAge = 29;
-        boolean isAdult = myAge > 20;
-        System.out.println(isAdult);
-        System.out.println(myAge == 21);
-*/
-/*
-        List<String> myList = new ArrayList<>();
-        String course1 = "Java Spring";
-        String course2 = "React";
-        myList.add(course1);
-        myList.add(course2);
-        System.out.println(myList);
-        System.out.println(myList.get(1));
-        myList.remove(1);
-        System.out.println(myList);
-*/
 
-        List<String> courseList = new ArrayList<>();
-        String course1 = "Web Dev";
-        String course2 = "App Dev";
-        courseList.add(course1);
-        courseList.add(course2);
-        System.out.println(courseList);
+    // 파라미터 X, 반환값 X
+    public void simplePrint() {
+        System.out.println("파라미터도 없고, 반환값도 없어요!");
+    }
+
+    // 파라미터 O, 반환값 X
+    public void simpleSum(int num1, int num2) {
+        System.out.println("num1 :" + num1 + ", num2: " + num2);
+    }
+
+    // 파라미터 X, 반환값 O
+    public int simpleReturn() {
+        return 3;
+    }
+
+    // 파라미터 O, 반환값 O
+    public int sum(num1, num2) {
+        return num1 + num2;
+    }
+
+    public static void printInfo() {
+        String title = "Software Developer";
+        String name = "Nara";
+
+        System.out.println(title);
+        System.out.println(name);
+    }
+
+    public static void main(String[] args) {
+        printInfo();
     }
 }
+
