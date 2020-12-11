@@ -5,7 +5,37 @@ import java.util.List;
 
 public class Prac {
 
+    public static int countFruit(String input) {
+        List<String> fruits = new ArrayList<>();
+        fruits.add("감");
+        fruits.add("배");
+        fruits.add("감");
+        fruits.add("딸기");
+        fruits.add("수박");
+        fruits.add("메론");
+        fruits.add("수박");
+        fruits.add("딸기");
+        fruits.add("메론");
+        fruits.add("수박");
+        fruits.add("메론");
+        fruits.add("수박");
+        fruits.add("감");
+
+        int count = 0;
+        for (String fruit : fruits) {
+            System.out.println(fruit);
+            if (fruit.equals((input))) {
+                count++;
+            }
+        }
+        return count;
+    }
+
     public static void main(String[] args) {
+        int count = countFruit("수박");
+        System.out.println(count);
+
+/*
         List<String> fruits = new ArrayList<>();
         fruits.add("감");
         fruits.add("배");
@@ -35,6 +65,7 @@ public class Prac {
         System.out.println(fruits.get(10));
         System.out.println(fruits.get(11));
         System.out.println(fruits.get(12));
+*/
 
         /*
 enhanced for
@@ -48,6 +79,7 @@ enhanced for
         }
 */
 
+/*
         List<String> celebs = new ArrayList<>();
         celebs.add("아이유");
         celebs.add("린다G");
@@ -60,6 +92,7 @@ enhanced for
         celebs.add("정우성");
         celebs.add("제니");
         celebs.add("정국");
+*/
 
 /*
         for (String celeb : celebs) {
@@ -71,7 +104,14 @@ enhanced for
             System.out.println(celebs.get(i));
         }
 */
-        
+/*
+        int age = 20;
+        if (age > 19) {
+            System.out.println("성인입니다.");
+        } else {
+            System.out.println("미성년자입니다.");
+        }
+*/
 
     }
 }
