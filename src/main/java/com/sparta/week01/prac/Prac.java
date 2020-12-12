@@ -48,6 +48,9 @@ public class Prac {
         System.out.println(course2.title);
         System.out.println(course2.tutor);
 
+        Course course3 = new Course("diff EQ", "Julie", 120);
+        System.out.println(course3.title);
+
 /*
         List<String> fruits = new ArrayList<>();
         fruits.add("감");

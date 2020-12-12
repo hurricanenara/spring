@@ -12,6 +12,8 @@ public class Course {
     }
     //constructor with params
     public Course(String title, String tutor, int days) {
-
+        this.title = title;
+        this.tutor = tutor;
+        this.days = days;
     }
 }
