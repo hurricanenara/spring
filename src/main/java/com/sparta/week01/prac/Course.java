@@ -5,4 +5,13 @@ public class Course {
     public String title;
     public String tutor;
     public int days;
+
+    //basic constructor
+    public Course() {
+
+    }
+    //constructor with params
+    public Course(String title, String tutor, int days) {
+
+    }
 }
