@@ -38,18 +38,20 @@ public class Prac {
         System.out.println(count);
 */
         Course course = new Course();
-        course.title = "웹개발의 봄, Spring";
-        System.out.println(course.title);
-        System.out.println(course.tutor);
+        course.setTitle("Java 101");
+        course.setTutor("Nara");
+        course.setDays(365);
+        System.out.println(course.getTitle());
+        System.out.println(course.getTutor());
 
         Course course2 = new Course();
-        course2.title = "title1";
-        course2.tutor = "nara";
-        System.out.println(course2.title);
-        System.out.println(course2.tutor);
+        course2.setTitle("C++ 101");
+        course2.setTutor("Seungyoon");
+        course2.setDays(365);
+        System.out.println(course2.getTitle());
+        System.out.println(course2.getTutor());
 
         Course course3 = new Course("diff EQ", "Julie", 120);
-        System.out.println(course3.title);
 
 /*
         List<String> fruits = new ArrayList<>();
